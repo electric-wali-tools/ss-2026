@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG ENTERPRISES | Electric Scooter Showroom in Patna, Bihar</title>
+    <meta name="description" content="SG ENTERPRISES - Authorized Electric Scooty Showroom in Lodipur, Patna, Bihar. Best Electric Scooters with 120+ km Range, Fast Charging & Easy EMI. Call 09031527881.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Glassmorphism animated background -->
+    <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span><i class="fa-solid fa-bolt"></i> SG ENTERPRISES - Govt Subsidy & 0% Interest EMI Available</span>
+                <span><i class="fa-solid fa-clock"></i> Showroom Open 9:00 AM - 8:30 PM (All 7 Days)</span>
+            </div>
+            <div class="top-contact">
+                <a href="tel:+919031527881"><i class="fa-solid fa-phone"></i> +91 09031527881</a>
+                <a href="https://wa.me/919031527881?text=Hello%20SG%20ENTERPRISES,%20I%20want%20to%20inquire%20about%20Electric%20Scooty%20Price%20%26%20Test%20Drive" target="_blank" class="whatsapp-top">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header / Navigation (Single Line Sleek Mobile & Desktop Layout) -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon"><i class="fa-solid fa-charging-station"></i></div>
+                <div class="logo-text">
+                    <span class="logo-title">SG <span class="accent-text">ENTERPRISES</span></span>
+                    <span class="logo-sub">ELECTRIC SCOOTER SHOWROOM</span>
+                </div>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#models">Scooters</a></li>
+                    <li><a href="#calculator">Savings Calc</a></li>
+                    <li><a href="#features">Battery Tech</a></li>
+                    <li><a href="#offers">EMI & Offers</a></li>
+                    <li><a href="#location">Showroom Map</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+919031527881" class="phone-link-btn">
+                    <i class="fa-solid fa-phone"></i> 09031527881
+                </a>
+                <button class="btn btn-primary" onclick="openTestDriveModal('General Test Drive Inquiry')">
+                    <i class="fa-solid fa-gauge-high"></i> Free Test Drive
+                </button>
+                <button class="mobile-toggle" aria-label="Toggle Menu" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo-text">
+                <span class="logo-title">SG <span class="accent-text">ENTERPRISES</span></span>
+                <span class="logo-sub">AUTHORIZED SHOWROOM</span>
+            </div>
+            <button class="close-drawer" onclick="toggleMobileMenu()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="drawer-menu">
+            <li><a href="#home" onclick="toggleMobileMenu()"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#models" onclick="toggleMobileMenu()"><i class="fa-solid fa-motorcycle"></i> Scooter Models</a></li>
+            <li><a href="#calculator" onclick="toggleMobileMenu()"><i class="fa-solid fa-calculator"></i> Fuel Savings Calculator</a></li>
+            <li><a href="#features" onclick="toggleMobileMenu()"><i class="fa-solid fa-battery-full"></i> Battery & Technology</a></li>
+            <li><a href="#offers" onclick="toggleMobileMenu()"><i class="fa-solid fa-tags"></i> Finance & EMI Schemes</a></li>
+            <li><a href="#location" onclick="toggleMobileMenu()"><i class="fa-solid fa-map-location-dot"></i> Showroom Location</a></li>
+            <li><a href="#contact" onclick="toggleMobileMenu()"><i class="fa-solid fa-envelope"></i> Contact Showroom</a></li>
+        </ul>
+        <div class="drawer-actions">
+            <a href="tel:+919031527881" class="btn btn-outline btn-block mb-10">
+                <i class="fa-solid fa-phone"></i> Call 09031527881
+            </a>
+            <button class="btn btn-primary btn-block" onclick="toggleMobileMenu(); openTestDriveModal('Mobile Drawer');">
+                <i class="fa-solid fa-gauge-high"></i> Book Test Drive Now
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Slider Section -->
+    <section id="home" class="hero-slider-section">
+        <div class="hero-slider-container">
+            <div class="hero-slides-wrapper" id="heroSlidesWrapper">
+                
+                <!-- Slide 1: High Range EV Scooter -->
+                <div class="hero-slide active">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1470&auto=format&fit=crop');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="container slide-content">
+                        <div class="hero-badge"><i class="fa-solid fa-bolt"></i> Next-Gen Electric Mobility</div>
+                        <h1 class="slide-title">Ride The Future With <span class="gradient-text">160 KM High Range</span></h1>
+                        <p class="slide-desc">Switch to 100% electric scooters. Removable LFP/NMC Battery, Fast 2-Hour Charging, Smart Digital Touch Cluster, & Zero Petrol Bills.</p>
+                        <div class="slide-cta-group">
+                            <button class="btn btn-primary btn-lg" onclick="openTestDriveModal('High Range EV Model')">
+                                <i class="fa-solid fa-key"></i> Book Free Test Drive
+                            </button>
+                            <a href="https://wa.me/919031527881?text=Hi%20EV%20Showroom,%20I%20want%20On-Road%20Price%20Quote%20for%20Electric%20Scooter" target="_blank" class="btn btn-whatsapp btn-lg">
+                                <i class="fa-brands fa-whatsapp"></i> Get On-Road Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Low Down Payment Offer -->
+                <div class="hero-slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=1470&auto=format&fit=crop');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="container slide-content">
+                        <div class="hero-badge"><i class="fa-solid fa-percent"></i> Festival Finance Deal</div>
+                        <h2 class="slide-title">Down Payment Starting <span class="gradient-text">At Just ₹4,999*</span></h2>
+                        <p class="slide-desc">Easy EMI options starting at ₹1,999/month. Instant loan approval with minimal documentation. Exchange your old petrol vehicle!</p>
+                        <div class="slide-cta-group">
+                            <button class="btn btn-primary btn-lg" onclick="openTestDriveModal('Finance & Loan Inquiry')">
+                                <i class="fa-solid fa-file-invoice-dollar"></i> Apply For Loan
+                            </button>
+                            <a href="tel:+919031527881" class="btn btn-outline btn-lg">
+                                <i class="fa-solid fa-phone"></i> Call Showroom Manager
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Smart App Connected Tech -->
+                <div class="hero-slide">
+                    <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1609630875171-b1321377ee65?q=80&w=1470&auto=format&fit=crop');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="container slide-content">
+                        <div class="hero-badge"><i class="fa-solid fa-mobile-screen-button"></i> Smart IoT Connectivity</div>
+                        <h2 class="slide-title">GPS Navigation & <span class="gradient-text">Anti-Theft Security</span></h2>
+                        <p class="slide-desc">Control your EV scooter from your phone! Geo-fencing, remote lock/unlock, battery status monitoring, & roadside assistance.</p>
+                        <div class="slide-cta-group">
+                            <button class="btn btn-primary btn-lg" onclick="openTestDriveModal('Smart Tech Scooter')">
+                                <i class="fa-solid fa-microchip"></i> Explore Smart Models
+                            </button>
+                            <a href="#models" class="btn btn-outline btn-lg">
+                                <i class="fa-solid fa-eye"></i> View All Scooters
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slider Controls -->
+            <button class="slider-arrow prev-arrow" onclick="prevHeroSlide()" aria-label="Previous Slide">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="slider-arrow next-arrow" onclick="nextHeroSlide()" aria-label="Next Slide">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Dots Navigation -->
+            <div class="slider-dots" id="heroSliderDots">
+                <span class="dot active" onclick="goToHeroSlide(0)"></span>
+                <span class="dot" onclick="goToHeroSlide(1)"></span>
+                <span class="dot" onclick="goToHeroSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scooter Models Showcase Section -->
+    <section id="models" class="models-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">FEATURED ELECTRIC SCOOTERS</span>
+                <h2 class="fluid-h2">Explore Our Top Selling EV Scooter Models</h2>
+                <p class="fluid-p">High performance, robust build quality, certified safety & 3 to 5 years battery warranty.</p>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Models</button>
+                <button class="filter-btn" data-filter="high-speed">High Speed (75 km/h+)</button>
+                <button class="filter-btn" data-filter="long-range">Long Range (140+ KM)</button>
+                <button class="filter-btn" data-filter="budget">Budget Friendly</button>
+            </div>
+
+            <div class="models-grid">
+                <!-- Scooter Model 1 -->
+                <div class="model-card" data-category="high-speed">
+                    <div class="model-badge">Best Seller</div>
+                    <div class="model-img-box">
+                        <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop" alt="Storm Pro EV Electric Scooter">
+                    </div>
+                    <div class="model-content">
+                        <h3>Storm Pro EV (High Speed)</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item"><i class="fa-solid fa-gauge-high"></i> 85 km/h Top Speed</div>
+                            <div class="spec-item"><i class="fa-solid fa-route"></i> 140 KM / Charge</div>
+                            <div class="spec-item"><i class="fa-solid fa-battery-three-quarters"></i> 3.2 kWh Removable Battery</div>
+                            <div class="spec-item"><i class="fa-solid fa-bolt"></i> 2.5 Hrs Fast Charge</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="old-price">₹1,15,000</span>
+                                <span class="current-price">₹89,999*</span>
+                            </div>
+                            <span class="subsidy-note">+ FAME-II Subsidy Applied</span>
+                        </div>
+                        <div class="card-action-btns">
+                            <button class="btn btn-primary btn-sm btn-block" onclick="openTestDriveModal('Storm Pro EV')">
+                                <i class="fa-solid fa-key"></i> Book Test Drive
+                            </button>
+                            <button class="btn btn-whatsapp btn-sm btn-block" onclick="sendWhatsAppQuote('Storm Pro EV', '89,999')">
+                                <i class="fa-brands fa-whatsapp"></i> Get Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scooter Model 2 -->
+                <div class="model-card" data-category="long-range">
+                    <div class="model-badge green-badge">160 KM Range</div>
+                    <div class="model-img-box">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop" alt="Thunder Max Long Range Electric Scooty">
+                    </div>
+                    <div class="model-content">
+                        <h3>Thunder Max (Ultra Range)</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item"><i class="fa-solid fa-gauge-high"></i> 75 km/h Top Speed</div>
+                            <div class="spec-item"><i class="fa-solid fa-route"></i> 160 KM Dual Battery</div>
+                            <div class="spec-item"><i class="fa-solid fa-shield-halved"></i> 5 Years Battery Warranty</div>
+                            <div class="spec-item"><i class="fa-solid fa-mobile-screen"></i> 7" Touchscreen GPS</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="old-price">₹1,25,000</span>
+                                <span class="current-price">₹99,999*</span>
+                            </div>
+                            <span class="subsidy-note">Down Payment ₹6,999</span>
+                        </div>
+                        <div class="card-action-btns">
+                            <button class="btn btn-primary btn-sm btn-block" onclick="openTestDriveModal('Thunder Max EV')">
+                                <i class="fa-solid fa-key"></i> Book Test Drive
+                            </button>
+                            <button class="btn btn-whatsapp btn-sm btn-block" onclick="sendWhatsAppQuote('Thunder Max EV', '99,999')">
+                                <i class="fa-brands fa-whatsapp"></i> Get Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scooter Model 3 -->
+                <div class="model-card" data-category="budget">
+                    <div class="model-badge gold-badge">Budget Choice</div>
+                    <div class="model-img-box">
+                        <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?q=80&w=800&auto=format&fit=crop" alt="EcoRider City Scooter">
+                    </div>
+                    <div class="model-content">
+                        <h3>EcoRider City (Non-RTO / Easy Ride)</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item"><i class="fa-solid fa-id-card-clip"></i> No License / RTO Required</div>
+                            <div class="spec-item"><i class="fa-solid fa-route"></i> 90 KM / Charge</div>
+                            <div class="spec-item"><i class="fa-solid fa-gauge-high"></i> 25 km/h Max Speed</div>
+                            <div class="spec-item"><i class="fa-solid fa-couch"></i> Extra Comfort Seat</div>
+                        </div>
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="old-price">₹75,000</span>
+                                <span class="current-price">₹54,999*</span>
+                            </div>
+                            <span class="subsidy-note">EMI ₹1,499/mo</span>
+                        </div>
+                        <div class="card-action-btns">
+                            <button class="btn btn-primary btn-sm btn-block" onclick="openTestDriveModal('EcoRider City EV')">
+                                <i class="fa-solid fa-key"></i> Book Test Drive
+                            </button>
+                            <button class="btn btn-whatsapp btn-sm btn-block" onclick="sendWhatsAppQuote('EcoRider City EV', '54,999')">
+                                <i class="fa-brands fa-whatsapp"></i> Get Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Petrol vs EV Savings Calculator -->
+    <section id="calculator" class="calc-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">SAVINGS CALCULATOR</span>
+                <h2 class="fluid-h2">Calculate How Much You Save With An Electric Scooter</h2>
+                <p class="fluid-p">Compare your monthly petrol costs with EV charging expense!</p>
+            </div>
+
+            <div class="calc-box">
+                <div class="calc-grid">
+                    <div class="calc-controls">
+                        <div class="slider-group">
+                            <label for="dailyKm">Daily Riding Distance: <strong id="dailyKmVal">35 KM</strong></label>
+                            <input type="range" id="dailyKm" min="10" max="120" value="35" step="5" oninput="calculateSavings()">
+                        </div>
+
+                        <div class="slider-group">
+                            <label for="petrolPrice">Petrol Price: <strong id="petrolPriceVal">₹105 / Litre</strong></label>
+                            <input type="range" id="petrolPrice" min="90" max="120" value="105" step="1" oninput="calculateSavings()">
+                        </div>
+
+                        <div class="slider-group">
+                            <label for="mileageVal">Petrol Bike Mileage: <strong id="mileageDisplay">45 KM/L</strong></label>
+                            <input type="range" id="mileageVal" min="30" max="65" value="45" step="5" oninput="calculateSavings()">
+                        </div>
+                    </div>
+
+                    <div class="calc-result-card">
+                        <h3><i class="fa-solid fa-sack-dollar"></i> Total Estimated Savings</h3>
+                        <div class="result-number" id="annualSavings">₹32,400</div>
+                        <p class="result-subtext">Saved Every Year In Petrol & Maintenance Costs!</p>
+                        <hr class="calc-hr">
+                        <div class="result-breakdown">
+                            <div><span>Monthly Petrol Cost:</span> <strong id="monthlyPetrol">₹2,835</strong></div>
+                            <div><span>Monthly EV Electricity:</span> <strong id="monthlyEv">₹135</strong></div>
+                            <div class="highlight-row"><span>Monthly Net Savings:</span> <strong id="monthlySavings">₹2,700</strong></div>
+                        </div>
+                        <button class="btn btn-primary btn-block mt-20" onclick="openTestDriveModal('Savings Calculator Lead')">
+                            <i class="fa-solid fa-charging-station"></i> Book Test Drive & Save Money
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Battery & Technology Highlights -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">ADVANCED EV ENGINEERING</span>
+                <h2 class="fluid-h2">Why Choose Our Electric Scooters?</h2>
+                <p class="fluid-p">Built for Indian roads with IP67 water resistant battery, dual disc brakes, and tubeless tires.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="ft-icon"><i class="fa-solid fa-battery-three-quarters"></i></div>
+                    <h3>Removable LFP Battery</h3>
+                    <p>Easily detach and charge your scooter battery at home, office, or apartment like a mobile phone.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="ft-icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+                    <h3>Fast Charging (0-80% in 2h)</h3>
+                    <p>Advanced intelligent charger with auto cut-off protection and surge safety technology.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="ft-icon"><i class="fa-solid fa-shield-cat"></i></div>
+                    <h3>IP67 Waterproof Motor</h3>
+                    <p>100% water resistant BLDC hub motor designed for rain, waterlogging, and rough terrains.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="ft-icon"><i class="fa-solid fa-mobile-button"></i></div>
+                    <h3>Mobile App Connected</h3>
+                    <p>Live GPS tracking, anti-theft alarm, trip analytics, and over-the-air (OTA) software updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finance, Subsidies & EMI Section -->
+    <section id="offers" class="offers-section">
+        <div class="container">
+            <div class="offers-box">
+                <div class="offers-content">
+                    <span class="sub-heading">EASY FINANCE & SUBSIDY</span>
+                    <h2 class="fluid-h2">Get Instant Loan Approval & Govt Subsidies</h2>
+                    <p class="fluid-p">We partner with HDFC, ICICI, TVS Credit, IDFC & Bajaj Finserv for 100% hassle-free paperless financing.</p>
+                    
+                    <ul class="offer-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Low Down Payment Starting At ₹4,999</li>
+                        <li><i class="fa-solid fa-circle-check"></i> No Cost EMI Available Up To 12 Months</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Old Petrol Scooter Exchange Bonus Up To ₹10,000</li>
+                        <li><i class="fa-solid fa-circle-check"></i> State & Central EV Subsidy Assistance</li>
+                    </ul>
+
+                    <div class="offer-cta">
+                        <button class="btn btn-primary btn-lg" onclick="openTestDriveModal('EMI & Subsidy Inquiry')">
+                            <i class="fa-solid fa-calculator"></i> Check Your Loan Eligibility
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showroom Location & Map Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-heading">VISIT OUR SHOWROOM</span>
+                <h2 class="fluid-h2">Authorized Electric Scooty Showroom</h2>
+                <p class="fluid-p">Visit us for live demonstration, free test drives & instant delivery.</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="location-info-card">
+                    <h3><i class="fa-solid fa-store"></i> Showroom Address</h3>
+                    <p class="address-text">
+                        <i class="fa-solid fa-location-dot"></i> <strong>S G ENTERPRISES</strong><br>
+                        SAGAR COMPLEX, Christian Colony,<br>
+                        Lodipur, Patna, Bihar - 800001
+                    </p>
+                    <hr>
+                    <p><i class="fa-solid fa-phone"></i> <strong>Call Showroom: +91 09031527881</strong></p>
+                    <p><i class="fa-solid fa-clock"></i> Open 7 Days: 9:00 AM - 8:30 PM</p>
+                    
+                    <div class="map-action-btns">
+                        <a href="https://maps.app.goo.gl/g64pRgmpCbxZU7z96" target="_blank" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-map-location-dot"></i> Open Directions in Google Maps
+                        </a>
+                        <a href="https://wa.me/919031527881?text=Hi%20SG%20ENTERPRISES,%20please%20send%20live%20showroom%20location%20map" target="_blank" class="btn btn-whatsapp btn-block">
+                            <i class="fa-brands fa-whatsapp"></i> Get Location on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed / Interactive View -->
+                <div class="map-embed-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1s0x39ed59000f45a499%3A0x3b2966167d1b05f6!2sElectric+scooty!5e0!3m2!1sen!2sin!4v1710000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SG ENTERPRISES Electric Scooter Showroom Google Maps Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-form-side">
+                    <span class="sub-heading">GET IN TOUCH</span>
+                    <h2 class="fluid-h2">Book Free Test Drive / Request Price Offer</h2>
+                    <p class="fluid-p">Fill in your details or call <strong>+91 09031527881</strong> for instant SG ENTERPRISES showroom assistance.</p>
+
+                    <form id="inquiryForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="userName">Full Name *</label>
+                                <input type="text" id="userName" required placeholder="e.g. Rahul Sharma" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="userPhone">Mobile Number *</label>
+                                <input type="tel" id="userPhone" required placeholder="e.g. 09031527881" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="selectedModel">Select Scooter Model</label>
+                                <select id="selectedModel" class="form-control">
+                                    <option value="Storm Pro EV (High Speed)">Storm Pro EV (High Speed 85 km/h)</option>
+                                    <option value="Thunder Max (Ultra Range 160 KM)">Thunder Max (Ultra Range 160 KM)</option>
+                                    <option value="EcoRider City (Budget Non-RTO)">EcoRider City (Budget Non-RTO)</option>
+                                    <option value="All EV Models Comparison">All EV Models Comparison</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Test Drive Date</label>
+                                <input type="date" id="preferredDate" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userCity">Your City / Location</label>
+                            <input type="text" id="userCity" placeholder="e.g. Lodipur, Patna / Nearby" class="form-control">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Request & Open WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col branding-col">
+                <a href="#" class="brand-logo footer-logo">
+                    <div class="logo-icon"><i class="fa-solid fa-charging-station"></i></div>
+                    <div class="logo-text">
+                        <span class="logo-title">SG <span class="accent-text">ENTERPRISES</span></span>
+                        <span class="logo-sub">AUTHORIZED EV SHOWROOM</span>
+                    </div>
+                </a>
+                <p>Authorized Multi-Brand Electric Scooty Showroom in Patna, Bihar. Eco-friendly, high-performance & budget electric scooters.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/919031527881" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="tel:+919031527881" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://maps.app.goo.gl/g64pRgmpCbxZU7z96" target="_blank" aria-label="Location"><i class="fa-solid fa-map-location-dot"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#models">EV Scooter Models</a></li>
+                    <li><a href="#calculator">Fuel Savings Calculator</a></li>
+                    <li><a href="#features">Battery Technology</a></li>
+                    <li><a href="#offers">Finance & Subsidies</a></li>
+                    <li><a href="#location">Showroom Map</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>EV Scooter Models</h4>
+                <ul class="footer-links">
+                    <li><a href="#contact" onclick="openTestDriveModal('Storm Pro EV'); return false;">Storm Pro EV (High Speed)</a></li>
+                    <li><a href="#contact" onclick="openTestDriveModal('Thunder Max EV'); return false;">Thunder Max (160 KM Range)</a></li>
+                    <li><a href="#contact" onclick="openTestDriveModal('EcoRider City'); return false;">EcoRider City (Budget Non-RTO)</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Showroom Address</h4>
+                <p class="footer-addr">
+                    <i class="fa-solid fa-location-dot"></i> S G ENTERPRISES, SAGAR COMPLEX, Christian Colony, Lodipur, Patna, Bihar - 800001
+                </p>
+                <p><i class="fa-solid fa-phone"></i> <strong>+91 09031527881</strong></p>
+                <p><i class="fa-solid fa-envelope"></i> contact@sgenterprisesev.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 SG ENTERPRISES. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Action Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+919031527881" class="sticky-btn call-sticky">
+            <i class="fa-solid fa-phone"></i> Call 09031527881
+        </a>
+        <a href="https://wa.me/919031527881?text=Hello%20EV%20Showroom,%20I%20want%20to%20book%20Free%20Test%20Drive" target="_blank" class="sticky-btn wa-sticky">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
+        </a>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919031527881?text=Hello%20EV%20Showroom,%20I%20want%20to%20inquire%20about%20Electric%20Scooty" target="_blank" class="floating-wa" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal Popup for Test Drive & Booking -->
+    <div class="modal-backdrop" id="testDriveModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeTestDriveModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-gauge-high"></i> Book Free Test Drive</h3>
+                <p>Selected Scooter: <strong id="modalModelName">Storm Pro EV</strong></p>
+            </div>
+            <form onsubmit="handleModalSubmit(event)">
+                <div class="form-group">
+                    <label for="modalName">Your Full Name</label>
+                    <input type="text" id="modalName" required placeholder="Enter your name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="modalPhone">Mobile Number</label>
+                    <input type="tel" id="modalPhone" required placeholder="Enter 10-digit mobile" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="modalLocality">City / Preferred Date</label>
+                    <input type="text" id="modalLocality" placeholder="e.g. Patna / Tomorrow" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fa-brands fa-whatsapp"></i> Confirm & Book on WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
